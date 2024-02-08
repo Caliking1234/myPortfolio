@@ -7,8 +7,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const TexhStcak = () => {
-  const data = ["ReactJS", "NextJS", "NodeJS", "THREEJS"];
-  const color = ["#ffb77c", "#e97451", "#ffe5ef", "#ccffc8"];
+  const data = ["ReactJS", "NextJS", "NodeJS", "THREEJS", "React-Native"];
+  const color = ["#a31919", "#e97451", "#d38377", "#ff7cc3", "#d3a7c1"];
 
   const component = useRef(null);
 
@@ -19,7 +19,7 @@ const TexhStcak = () => {
           trigger: component.current,
           start: "top bottom",
           end: "bottom top",
-          scrub: 4,
+          scrub: 8,
         },
       });
 
@@ -31,6 +31,9 @@ const TexhStcak = () => {
               ? gsap.utils.random(600, 400)
               : gsap.utils.random(-600, -400);
           },
+          rotate: (index) => {
+            return (index + 1) % 2 == 0 ? 15 : -15;
+          },
         },
         {
           x: (index) => {
@@ -38,6 +41,7 @@ const TexhStcak = () => {
               ? gsap.utils.random(-600, -400)
               : gsap.utils.random(600, 400);
           },
+          rotate: 0,
         }
       );
     }, component);
@@ -64,7 +68,10 @@ const TexhStcak = () => {
               <React.Fragment key={idx}>
                 <span
                   className=" texh-item text-8xl font-extrabold uppercase tracking-tighter"
-                  style={{ color: idx === 7 ? color[index] : "inherit" }}
+                  style={{
+                    color: idx === 7 ? color[index] : "inherit",
+                    opacity: idx === 7 ? 1 : 0.4,
+                  }}
                 >
                   {name}
                 </span>

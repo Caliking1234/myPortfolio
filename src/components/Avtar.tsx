@@ -2,13 +2,22 @@
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import { gsap } from "gsap";
-import { compressPositions } from "three/examples/jsm/utils/GeometryCompressionUtils.js";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const Avtar = () => {
   const component = useRef(null);
   useEffect(() => {
     let ctx = gsap.context(() => {
-      gsap.fromTo(
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: component.current,
+          start: "top bottom",
+          end: "bottom top",
+          scrub: 4,
+        },
+      });
+      tl.fromTo(
         ".avtar",
         { opacity: 0, scale: 1.4 },
         { scale: 1, opacity: 1, duration: 1.3, ease: "power3.inOut" }

@@ -1,4 +1,5 @@
 "use client";
+import About from "@/components/About";
 import Bounded from "@/components/Bounded";
 import Shapes from "@/components/Shapes";
 import { gsap } from "gsap";
@@ -64,28 +65,31 @@ export default function Home() {
   };
 
   return (
-    <Bounded
-      ref={componenet}
-      className="flex min-h-screen flex-col bg-slate-900 w-full"
-    >
-      <div className=" grid max-h-screen grid-cols-1 md:grid-cols-2 items-center">
-        <Shapes />
-        <div>
-          <h1 className=" mb-8 text-[clamp(3rem,20vmin,20rem)] font-extrabold leading-none tracking-tighter">
-            <div className=" col-start-1 md:row-start-1">
-              <span className=" block text-slate-300">
-                {renderLetters("Piyush", "first")}
-              </span>
-              <span className=" -mt[.2em] block text-slate-500">
-                {renderLetters("Sharma", "last")}
-              </span>
-            </div>
-          </h1>
-          <span className=" job-title block bg-gradient-to-tr from-yellow-500 via-yellow-200 to-yellow-500 text-2xl font-bold uppercase trackin-[.2em] text-transparent bg-clip-text opacity-0 md:text-4xl">
-            passionate developer
-          </span>
+    <div>
+      <Bounded
+        ref={componenet}
+        className="flex min-h-screen flex-col bg-slate-900 w-full"
+      >
+        <div className=" grid max-h-screen grid-cols-1 md:grid-cols-2 items-center">
+          <Shapes />
+          <div>
+            <h1 className=" mb-8 text-[clamp(3rem,20vmin,20rem)] font-extrabold leading-none tracking-tighter">
+              <div className=" col-start-1 md:row-start-1">
+                <span className=" block text-slate-300">
+                  {renderLetters("Piyush", "first")}
+                </span>
+                <span className=" -mt[.2em] block text-slate-500">
+                  {renderLetters("Sharma", "last")}
+                </span>
+              </div>
+            </h1>
+            <span className=" job-title block bg-gradient-to-tr from-yellow-500 via-yellow-200 to-yellow-500 text-2xl font-bold uppercase trackin-[.2em] text-transparent bg-clip-text opacity-0 md:text-4xl">
+              passionate developer
+            </span>
+          </div>
         </div>
-      </div>
-    </Bounded>
+      </Bounded>
+      <About />
+    </div>
   );
 }
