@@ -66,9 +66,9 @@ export default function Home() {
   return (
     <Bounded
       ref={componenet}
-      className="flex min-h-screen flex-col bg-slate-900"
+      className="flex min-h-screen flex-col bg-slate-900 w-full"
     >
-      <div className=" grid min-h-[70vh] grid-cols-1 md:grid-cols-2 items-center">
+      <div className=" grid max-h-screen grid-cols-1 md:grid-cols-2 items-center">
         <Shapes />
         <div>
           <h1 className=" mb-8 text-[clamp(3rem,20vmin,20rem)] font-extrabold leading-none tracking-tighter">
