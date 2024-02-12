@@ -56,9 +56,41 @@ const MyProjectList = () => {
         return () => ctx.revert();
       }, component);
     };
-    window.addEventListener("mousemove", handleMouseMove);
+    const handleTouchMove = (e: TouchEvent) => {
+      const touch = e.touches[0];
+      if (touch) {
+        const mousePos = { x: e.clientX, y: e.clientY + window.scrollY };
 
-    return () => window.removeEventListener("mousemove", handleMouseMove);
+        const speed = Math.sqrt(
+          Math.pow(mousePos.x - lastMousePos.current.x, 2)
+        );
+
+        let ctx = gsap.context(() => {
+          if (currentItem != null) {
+            const maxY = window.scrollY + window.innerHeight - 350;
+            const maxX = window.innerWidth - 250;
+
+            gsap.to(revealRef.current, {
+              x: gsap.utils.clamp(0, maxX, mousePos.x - 110),
+              y: gsap.utils.clamp(0, maxY, mousePos.y - 50),
+              rotation: speed * (mousePos.x > lastMousePos.current.x ? 1 : -1),
+              ease: "back.out(2)",
+              duration: 1.3,
+              opacity: 1,
+            });
+          }
+          lastMousePos.current = mousePos;
+          return () => ctx.revert();
+        }, component);
+      }
+    };
+    window.addEventListener("mousemove", handleMouseMove);
+    window.addEventListener("touchmove", handleTouchMove);
+
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+      window.removeEventListener("touchmove", handleTouchMove);
+    };
   });
   return (
     <div ref={component} className=" w-full">
