@@ -78,7 +78,7 @@ const MyProjectList = () => {
 
             gsap.to(revealRef.current, {
               x: gsap.utils.clamp(0, maxX, mousePos.x - 110),
-              y: gsap.utils.clamp(0, maxY, mousePos.y - 50),
+              y: gsap.utils.clamp(0, maxY, mousePos.y - 10),
               rotation: speed * (mousePos.x > lastMousePos.current.x ? 1 : -1),
               ease: "back.out(2)",
               duration: 1.3,
