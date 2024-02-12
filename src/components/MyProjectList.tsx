@@ -28,6 +28,9 @@ const MyProjectList = () => {
     setcurrentItem(index);
   };
 
+  const handleTouchStart = (index: number) => {
+    setcurrentItem(index);
+  };
   const onMouseLeave = () => {
     setcurrentItem(null);
   };
@@ -106,6 +109,7 @@ const MyProjectList = () => {
             className="list- border-t border-t-slate-100 w-full flex items-center opacity-0f"
             key={index}
             onMouseEnter={() => onMouseEnter(index)}
+            onTouchStart={() => handleTouchStart(index)}
           >
             <Link
               className=" w-full py-5 pl-3 flex items-center  text-slate-200 text-3xl"
