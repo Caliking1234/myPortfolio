@@ -99,7 +99,7 @@ const MyProjectList = () => {
       window.removeEventListener("touchmove", handleTouchMove);
       window.removeEventListener("touchend", onMouseLeave);
     };
-  }, []);
+  });
   return (
     <div ref={component} className=" w-full">
       <ul
