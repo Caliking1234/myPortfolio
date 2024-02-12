@@ -1,6 +1,8 @@
 "use client";
 import About from "@/components/About";
 import Bounded from "@/components/Bounded";
+import MyProjectList from "@/components/MyProjectList";
+import MyProjects from "@/components/MyProjects";
 import Shapes from "@/components/Shapes";
 import { gsap } from "gsap";
 import { useEffect, useRef } from "react";
@@ -90,6 +92,7 @@ export default function Home() {
         </div>
       </Bounded>
       <About />
+      <MyProjects />
     </div>
   );
 }
