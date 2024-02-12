@@ -92,12 +92,14 @@ const MyProjectList = () => {
     };
     window.addEventListener("mousemove", handleMouseMove);
     window.addEventListener("touchmove", handleTouchMove);
+    window.addEventListener("touchend", onMouseLeave);
 
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
       window.removeEventListener("touchmove", handleTouchMove);
+      window.removeEventListener("touchend", onMouseLeave);
     };
-  });
+  }, []);
   return (
     <div ref={component} className=" w-full">
       <ul
