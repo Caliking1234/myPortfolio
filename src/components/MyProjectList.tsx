@@ -59,7 +59,10 @@ const MyProjectList = () => {
     const handleTouchMove = (e: TouchEvent) => {
       const touch = e.touches[0];
       if (touch) {
-        const mousePos = { x: e.clientX, y: e.clientY + window.scrollY };
+        const mousePos = {
+          x: touch.clientX,
+          y: touch.clientY + window.scrollY,
+        };
 
         const speed = Math.sqrt(
           Math.pow(mousePos.x - lastMousePos.current.x, 2)
