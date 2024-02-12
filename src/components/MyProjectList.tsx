@@ -103,6 +103,7 @@ const MyProjectList = () => {
       <ul
         className=" w-full grid border-b border-b-slate-100"
         onMouseLeave={onMouseLeave}
+        onTouchEnd={onMouseLeave}
       >
         {projectList.map((project, index) => (
           <li
