@@ -1,4 +1,5 @@
 import Bounded from "@/components/Bounded";
+import Herosection from "@/components/Herosection";
 import MyProjectList from "@/components/MyProjectList";
 import React from "react";
 
@@ -9,6 +10,7 @@ const page = () => {
         My Work
       </h1>
       <MyProjectList />
+      <Herosection />
     </Bounded>
   );
 };
