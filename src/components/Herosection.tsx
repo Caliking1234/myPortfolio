@@ -167,7 +167,7 @@ const Herosection = () => {
   }, []);
 
   return (
-    <div ref={container} className=" w-full h-[300vh] relative bg-slate-900">
+    <div ref={container} className=" w-full h-[200vh] relative bg-slate-900">
       <div className=" w-full sticky top-0 h-[100vh] overflow-hidden">
         <div className="flex items-center justify-center w-full h-[100vh] top-0 absolute">
           <div className=" w-[30vw] h-[25vh] flex items-center justify-center absolute opac1">
