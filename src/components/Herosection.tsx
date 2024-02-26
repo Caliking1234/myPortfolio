@@ -16,7 +16,7 @@ const Herosection = () => {
         scrollTrigger: {
           trigger: container.current,
           start: "top top",
-          end: "bottom bottom",
+          end: "bottom 80%",
           scrub: 3,
         },
       });
