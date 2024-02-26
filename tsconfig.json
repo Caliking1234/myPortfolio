@@ -26,8 +26,9 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/components/Herosection.jsx",
-    "src/components/TexhStcak.jsx"
+    "src/components/Herosection.tsx",
+    "src/components/TexhStcak.jsx",
+    "src/components/PerspectiveView.jsx"
   ],
   "exclude": ["node_modules"]
 }

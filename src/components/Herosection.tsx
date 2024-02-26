@@ -167,21 +167,6 @@ const Herosection = () => {
     return () => ctx.revert();
   }, []);
 
-  useEffect(() => {
-    const lenis = new Lenis();
-
-    lenis.on("scroll", (e) => {
-      console.log(e);
-    });
-
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-
-    requestAnimationFrame(raf);
-  }, []);
-
   return (
     <div ref={container} className=" w-full h-[150vh] relative bg-slate-900">
       <div className=" w-full sticky top-0 h-[100vh] overflow-hidden">
