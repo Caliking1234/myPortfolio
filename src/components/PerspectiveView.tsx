@@ -10,39 +10,13 @@ gsap.registerPlugin(ScrollTrigger);
 const PerspectiveView = () => {
   const container = useRef<HTMLDivElement>(null);
 
-  //   useEffect(() => {
-  //     const ctx = gsap.context(() => {
-  //       const tl = gsap.timeline({
-  //         scrollTrigger: {
-  //           trigger: container.current,
-  //           start: "top top",
-  //           end: "bottom bottom",
-  //           scrub: 3,
-  //         },
-  //       });
-  //       tl.fromTo(
-  //         ".animate-div",
-  //         {
-  //           rotate: 0,
-  //           scale: 1,
-  //         },
-  //         {
-  //           scale: 10,
-  //           rotate: "360deg",
-  //         },
-  //         0
-  //       );
-  //       });
-  //     });
-  //   }, []);
-
   useEffect(() => {
     const ctx = gsap.context(() => {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: container.current,
           start: "top top",
-          end: "200% bottom",
+          end: "1000% bottom",
           scrub: 3,
           pin: true,
         },
@@ -55,7 +29,7 @@ const PerspectiveView = () => {
 
       tl.fromTo(
         ".animate-div",
-        { scale: 0.5, rotate: 0 },
+        { scale: 1, rotate: 0 },
         { scale: 5, rotate: 360 }
       );
 
