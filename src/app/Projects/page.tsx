@@ -1,6 +1,6 @@
 import Bounded from "@/components/Bounded";
-import Herosection from "@/components/Herosection";
 import MyProjectList from "@/components/MyProjectList";
+import PerspectiveView from "@/components/PerspectiveView";
 import React from "react";
 
 const page = () => {
@@ -10,7 +10,7 @@ const page = () => {
         My Work
       </h1>
       <MyProjectList />
-      <Herosection />
+      <PerspectiveView />
     </Bounded>
   );
 };

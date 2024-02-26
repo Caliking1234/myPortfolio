@@ -3,6 +3,7 @@ import React, { useRef, useEffect } from "react";
 import Image from "next/image";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Lenis from "@studio-freight/lenis";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -16,7 +17,7 @@ const Herosection = () => {
           trigger: container.current,
           start: "top top",
           end: "bottom bottom",
-          scrub: 1,
+          scrub: 3,
         },
       });
       tl.fromTo(
@@ -30,8 +31,8 @@ const Herosection = () => {
           top: -1000,
           left: -1000,
           scale: 5,
-          duration: 2,
-          ease: "back.out(2)",
+          // duration: 2,
+          // ease: "back.out(2)",
         },
         0
       );
@@ -46,8 +47,8 @@ const Herosection = () => {
           top: -1000,
           left: "30vw",
           scale: 5,
-          duration: 2,
-          ease: "back.out(2)",
+          // duration: 2,
+          // ease: "back.out(2)",
         },
         0
       );
@@ -62,8 +63,8 @@ const Herosection = () => {
           top: -1000,
           right: -1000,
           scale: 5,
-          duration: 2,
-          ease: "back.out(2)",
+          // duration: 2,
+          // ease: "back.out(2)",
         },
         0
       );
@@ -78,8 +79,8 @@ const Herosection = () => {
           top: "40vh",
           left: -1000,
           scale: 5,
-          duration: 2,
-          ease: "back.out(2)",
+          // duration: 2,
+          // ease: "back.out(2)",
         },
         0
       );
@@ -94,8 +95,8 @@ const Herosection = () => {
           top: "40vh",
           right: -1000,
           scale: 5,
-          duration: 2,
-          ease: "back.out(2)",
+          // duration: 2,
+          // ease: "back.out(2)",
         },
         0
       );
@@ -110,8 +111,8 @@ const Herosection = () => {
           bottom: -1000,
           left: -1000,
           scale: 5,
-          duration: 2,
-          ease: "back.out(2)",
+          // duration: 2,
+          // ease: "back.out(2)",
         },
         0
       );
@@ -126,8 +127,8 @@ const Herosection = () => {
           bottom: -1000,
           left: "30vw",
           scale: 5,
-          duration: 2,
-          ease: "back.out(2)",
+          // duration: 2,
+          // ease: "back.out(2)",
         },
         0
       );
@@ -142,8 +143,8 @@ const Herosection = () => {
           bottom: -1000,
           right: -1000,
           scale: 5,
-          duration: 2,
-          ease: "back.out(2)",
+          // duration: 2,
+          // ease: "back.out(2)",
         },
         0
       );
@@ -156,8 +157,8 @@ const Herosection = () => {
         {
           width: "100%",
           height: "100%",
-          duration: 2,
-          ease: "back.out(2)",
+          // duration: 3,
+          // ease: "back.out(2)",
         },
         0.25
       );
@@ -166,8 +167,23 @@ const Herosection = () => {
     return () => ctx.revert();
   }, []);
 
+  useEffect(() => {
+    const lenis = new Lenis();
+
+    lenis.on("scroll", (e) => {
+      console.log(e);
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  }, []);
+
   return (
-    <div ref={container} className=" w-full h-[200vh] relative bg-slate-900">
+    <div ref={container} className=" w-full h-[150vh] relative bg-slate-900">
       <div className=" w-full sticky top-0 h-[100vh] overflow-hidden">
         <div className="flex items-center justify-center w-full h-[100vh] top-0 absolute">
           <div className=" w-[30vw] h-[25vh] flex items-center justify-center absolute opac1">

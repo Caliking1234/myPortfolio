@@ -4,6 +4,7 @@ import Bounded from "@/components/Bounded";
 import Herosection from "@/components/Herosection";
 // import MyProjectList from "@/components/MyProjectList";
 import MyProjects from "@/components/MyProjects";
+import PerspectiveView from "@/components/PerspectiveView";
 import Shapes from "@/components/Shapes";
 import { gsap } from "gsap";
 import { useEffect, useRef } from "react";
@@ -94,6 +95,7 @@ export default function Home() {
       </Bounded>
       <About />
       <Herosection />
+      <PerspectiveView />
       <MyProjects />
     </div>
   );

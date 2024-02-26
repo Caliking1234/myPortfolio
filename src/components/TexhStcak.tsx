@@ -3,6 +3,7 @@ import React, { useEffect, useRef } from "react";
 import Bounded from "./Bounded";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Lenis from "@studio-freight/lenis";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -19,7 +20,7 @@ const TexhStcak = () => {
           trigger: component.current,
           start: "top bottom",
           end: "bottom top",
-          scrub: 8,
+          scrub: 1,
         },
       });
 
@@ -48,6 +49,22 @@ const TexhStcak = () => {
 
     return () => ctx.revert();
   }, []);
+
+  useEffect(() => {
+    const lenis = new Lenis();
+
+    lenis.on("scroll", (e) => {
+      console.log(e);
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  }),
+    [];
   return (
     <div
       ref={component}
