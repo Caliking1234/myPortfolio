@@ -2,6 +2,7 @@ import Bounded from "@/components/Bounded";
 import MyProjectList from "@/components/MyProjectList";
 import PerspectiveView from "@/components/PerspectiveView";
 import React from "react";
+import Experience from "@/components/Experience";
 
 const page = () => {
   return (
@@ -9,8 +10,9 @@ const page = () => {
       <h1 className=" col-start-1 mb-8 text-[clamp(1.5rem,15vmin,15rem)] font-extrabold leading-none tracking-tighter">
         My Work
       </h1>
-      <MyProjectList />
-      <PerspectiveView />
+      {/* <MyProjectList /> */}
+      {/* <PerspectiveView /> */}
+      <Experience />
     </Bounded>
   );
 };

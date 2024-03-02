@@ -93,9 +93,9 @@ export default function Home() {
           </div>
         </div>
       </Bounded>
+      <PerspectiveView />
       <About />
       <Herosection />
-      <PerspectiveView />
       <MyProjects />
     </div>
   );

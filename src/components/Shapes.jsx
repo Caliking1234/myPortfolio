@@ -4,7 +4,6 @@ import { Canvas } from "@react-three/fiber";
 import { ContactShadows, Float, Environment } from "@react-three/drei";
 import { Suspense, useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
-import { roughness } from "three/examples/jsm/nodes/Nodes.js";
 
 const Shapes = () => {
   return (
@@ -128,7 +127,7 @@ function Geometry({ r, position, geometry, soundEffects, materials }) {
       x: `+=${gsap.utils.random(0, 4)}`,
       y: `+=${gsap.utils.random(0, 4)}`,
       z: `+=${gsap.utils.random(0, 4)}`,
-      duration: 1.5,
+      duration: 0.5,
       ease: "elastic.in(1,0.3)",
       yoyo: true,
     });

@@ -16,7 +16,7 @@ const PerspectiveView = () => {
         scrollTrigger: {
           trigger: container.current,
           start: "top top",
-          end: "1000% bottom",
+          end: "500% bottom",
           scrub: 3,
           pin: true,
         },
@@ -46,7 +46,7 @@ const PerspectiveView = () => {
   return (
     <div
       ref={container}
-      className=" w-full h-[100vh] relative bg-slate-900 overflow-hidden hidden sm:flex"
+      className=" w-full h-[100vh] relative bg-slate-900 overflow-hidden"
     >
       <div className=" w-full h-full absolute top-0 left-0 cover-text flex items-center justify-center bg-slate-900 z-10">
         <h1 className=" text-5xl font-bold">scroll down</h1>
