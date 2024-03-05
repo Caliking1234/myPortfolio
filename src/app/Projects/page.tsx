@@ -2,7 +2,7 @@ import Bounded from "@/components/Bounded";
 import MyProjectList from "@/components/MyProjectList";
 import PerspectiveView from "@/components/PerspectiveView";
 import React from "react";
-import Experience from "@/components/Experience";
+import Experience from "@/components/cylinder";
 
 const page = () => {
   return (

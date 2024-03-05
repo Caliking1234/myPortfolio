@@ -4,12 +4,60 @@ import Bounded from "@/components/Bounded";
 import Herosection from "@/components/Herosection";
 // import MyProjectList from "@/components/MyProjectList";
 import MyProjects from "@/components/MyProjects";
+import { HeroParallax } from "@/components/Newherosection";
 import PerspectiveView from "@/components/PerspectiveView";
 import Shapes from "@/components/Shapes";
 import { gsap } from "gsap";
 import { useEffect, useRef } from "react";
 export default function Home() {
   const componenet = useRef(null);
+  const products = [
+    {
+      title: "GulfGlobal",
+      link: "https://vpncloudconnect.com",
+      thumbnail: "/images/gulfglobal.jpg",
+    },
+    {
+      title: "Dotclu",
+      link: "https://https://dotclu.com",
+      thumbnail: "/images/dotclu.jpg",
+    },
+    {
+      title: "MSPIT",
+      link: "https://mspit.in/",
+      thumbnail: "/images/mspit.jpg",
+    },
+    {
+      title: "Toppers Edge",
+      link: "https://toppersedge.co.in/",
+      thumbnail: "/images/TE.jpg",
+    },
+    {
+      title: "Diagnoos",
+      link: "https://diagnoos.com/",
+      thumbnail: "/images/diagnoos.jpg",
+    },
+    {
+      title: "Crypto-Dashboard",
+      link: "https://crypto-dashboard-five-sage.vercel.app/",
+      thumbnail: "/images/cryptodashboard.jpg",
+    },
+    {
+      title: "Aaditya Media",
+      link: "https://aadityamedia.com/",
+      thumbnail: "/images/aadityamedia.jpg",
+    },
+    {
+      title: "Caliking",
+      link: "https://caliking1234.github.io/CALIKING/",
+      thumbnail: "/images/caliking.jpg",
+    },
+    {
+      title: "AayushmaanSarthi App",
+      link: "#",
+      thumbnail: "/images/ayushmaansarthi.jpg",
+    },
+  ];
 
   useEffect(() => {
     let ctx = gsap.context(() => {
@@ -69,8 +117,8 @@ export default function Home() {
   };
 
   return (
-    <div>
-      <Bounded
+    <div className=" bg-slate-900">
+      {/* <Bounded
         ref={componenet}
         className="flex min-h-screen flex-col bg-slate-900 w-full"
       >
@@ -92,7 +140,8 @@ export default function Home() {
             </span>
           </div>
         </div>
-      </Bounded>
+      </Bounded> */}
+      <HeroParallax products={products} />
       <PerspectiveView />
       <About />
       <Herosection />
