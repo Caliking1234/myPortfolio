@@ -1,12 +1,12 @@
 "use client";
 import About from "@/components/About";
-import Bounded from "@/components/Bounded";
+// import Bounded from "@/components/Bounded";
 import Herosection from "@/components/Herosection";
 // import MyProjectList from "@/components/MyProjectList";
 import MyProjects from "@/components/MyProjects";
 import { HeroParallax } from "@/components/Newherosection";
 import PerspectiveView from "@/components/PerspectiveView";
-import Shapes from "@/components/Shapes";
+// import Shapes from "@/components/Shapes";
 import { gsap } from "gsap";
 import { useEffect, useRef } from "react";
 export default function Home() {

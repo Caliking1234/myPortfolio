@@ -2,7 +2,7 @@ import Bounded from "@/components/Bounded";
 import MyProjectList from "@/components/MyProjectList";
 import PerspectiveView from "@/components/PerspectiveView";
 import React from "react";
-import Experience from "@/components/cylinder";
+// import Experience from "@/components/cylinder";
 
 const page = () => {
   return (
@@ -12,7 +12,7 @@ const page = () => {
       </h1>
       {/* <MyProjectList /> */}
       {/* <PerspectiveView /> */}
-      <Experience />
+      {/* <Experience /> */}
     </Bounded>
   );
 };
