@@ -49,7 +49,7 @@ const PerspectiveView = () => {
       className=" w-full h-[100vh] relative bg-slate-900 overflow-hidden"
     >
       <div className=" w-full h-full absolute top-0 left-0 cover-text flex items-center justify-center bg-slate-900 z-10">
-        <h1 className=" text-5xl font-bold">you imagine</h1>
+        <h1 className=" text-5xl font-bold">you imagine,</h1>
       </div>
       <div
         style={{ perspective: 800 }}

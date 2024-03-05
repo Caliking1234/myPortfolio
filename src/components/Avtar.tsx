@@ -14,13 +14,13 @@ const Avtar = () => {
           trigger: component.current,
           start: "top bottom",
           end: "bottom top",
-          scrub: 4,
+          scrub: 2,
         },
       });
       tl.fromTo(
         ".avtar",
         { opacity: 0, scale: 1.4 },
-        { scale: 1, opacity: 1, duration: 1.3, ease: "power3.inOut" }
+        { scale: 1, opacity: 1, duration: 0.5, ease: "power3.inOut" }
       );
 
       window.onmousemove = (e) => {

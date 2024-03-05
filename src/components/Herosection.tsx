@@ -72,7 +72,7 @@ const Herosection = () => {
         ".opac4",
         {
           top: "40vh",
-          left: "10vw",
+          left: "5vw",
           scale: 1,
         },
         {
@@ -168,88 +168,96 @@ const Herosection = () => {
   }, []);
 
   return (
-    <div ref={container} className=" w-full h-[150vh] relative bg-slate-900">
+    <div ref={container} className=" w-full h-[150vh] relative bg-[#1E1842]">
       <div className=" w-full sticky top-0 h-[100vh] overflow-hidden">
         <div className="flex items-center justify-center w-full h-[100vh] top-0 absolute">
-          <div className=" w-[30vw] h-[25vh] flex items-center justify-center absolute opac1">
+          <div
+            style={{ mixBlendMode: "darken" }}
+            className=" w-[30vw] h-[25vh] flex items-center justify-center absolute opac1"
+          >
             <Image
-              width={500}
-              height={500}
+              style={{ mixBlendMode: "darken" }}
+              width={400}
+              height={400}
               className=" object-fit w-[100%] h-[100%]"
               alt="zxc"
-              src={"/images/aikawa.jpg"}
+              src={"/images/cpp-removebg-preview.png"}
             />
           </div>
-          <div className=" w-[30vw] h-[25vh] flex items-center justify-center absolute opac2">
+          <div
+            style={{ mixBlendMode: "darken" }}
+            className=" w-[30vw] h-[25vh] flex items-center justify-center absolute opac2"
+          >
             <Image
-              width={500}
-              height={500}
+              style={{ mixBlendMode: "darken" }}
+              width={400}
+              height={400}
               className=" object-fit w-[100%] h-[100%]"
               alt="zxc"
-              src={"/images/gojo.jpg"}
+              src={"/images/expressjs-removebg-preview.png"}
             />
           </div>
           <div className=" w-[30vw] h-[25vh] flex items-center justify-center absolute opac3">
             <Image
-              width={500}
-              height={500}
+              width={400}
+              height={400}
               className=" object-fit w-[100%] h-[100%]"
               alt="zxc"
-              src={"/images/gyutiro.jpg"}
+              src={"/images/next.png"}
             />
           </div>
           <div className=" w-[30vw] h-[25vh] flex items-center justify-center absolute opac4">
             <Image
-              width={500}
-              height={500}
+              width={400}
+              height={400}
               className=" object-fit w-[100%] h-[100%]"
               alt="zxc"
-              src={"/images/kakashi.jpg"}
+              src={"/images/nodejs-removebg-preview.png"}
             />
           </div>
           <div className=" w-[30vw] h-[25vh] z-10 hero-img ">
             <Image
-              height={1000}
-              width={1000}
+              height={400}
+              width={400}
               className=" object-fit w-[100%] h-[100%]"
               alt="zxc"
-              src={"/images/anbu.jpg"}
+              src={"/images/dev.gif"}
             />
           </div>
           <div className=" w-[30vw] h-[25vh] flex items-center justify-center absolute opac5">
             <Image
-              width={500}
-              height={500}
+              width={400}
+              height={400}
               className=" object-fit w-[100%] h-[100%]"
               alt="zxc"
-              src={"/images/naruto.jpg"}
+              src={"/images/python.png"}
             />
           </div>
           <div className=" w-[30vw] h-[25vh] flex items-center justify-center absolute opac6">
             <Image
-              width={500}
-              height={500}
+              width={400}
+              height={400}
               className=" object-fit w-[100%] h-[100%]"
               alt="zxc"
-              src={"/images/sasuke.jpg"}
+              src={"/images/react-native-removebg-preview.png"}
             />
           </div>
           <div className=" w-[30vw] h-[25vh] flex items-center justify-center absolute opac7">
             <Image
-              width={500}
-              height={500}
+              width={400}
+              height={400}
               className=" object-fit w-[100%] h-[100%]"
               alt="zxc"
-              src={"/images/tangiro.jpg"}
+              src={"/images/react-removebg-preview.png"}
             />
           </div>
           <div className=" w-[30vw] h-[25vh] flex items-center justify-center absolute opac8">
             <Image
-              width={500}
-              height={500}
+              width={400}
+              height={400}
               className=" object-fit w-[100%] h-[100%]"
               alt="zxc"
-              src={"/images/zenitsu.jpg"}
+              src={"/images/posgre-removebg-preview.png"}
             />
           </div>
         </div>
