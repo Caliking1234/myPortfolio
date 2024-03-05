@@ -6,14 +6,44 @@ import { gsap } from "gsap";
 const MyProjectList = () => {
   const projectList = [
     {
-      name: "Dotclu",
-      Image: "/images/dotclu.jpg",
-      link: "https://dotclu.com/",
+      title: "GulfGlobal",
+      link: "https://vpncloudconnect.com",
+      thumbnail: "/images/gulfglobal.jpg",
     },
     {
-      name: "GulfGlobal",
-      Image: "/images/gulfglobal.jpg",
-      link: "https://vpncloudconnect.com/",
+      title: "Dotclu",
+      link: "https://https://dotclu.com",
+      thumbnail: "/images/dotclu.jpg",
+    },
+    {
+      title: "MSPIT",
+      link: "https://mspit.in/",
+      thumbnail: "/images/mspit.jpg",
+    },
+    {
+      title: "Toppers Edge",
+      link: "https://toppersedge.co.in/",
+      thumbnail: "/images/TE.jpg",
+    },
+    {
+      title: "Diagnoos",
+      link: "https://diagnoos.com/",
+      thumbnail: "/images/diagnoos.jpg",
+    },
+    {
+      title: "Crypto-Dashboard",
+      link: "https://crypto-dashboard-five-sage.vercel.app/",
+      thumbnail: "/images/cryptodashboard.jpg",
+    },
+    {
+      title: "Aaditya Media",
+      link: "https://aadityamedia.com/",
+      thumbnail: "/images/aadityamedia.jpg",
+    },
+    {
+      title: "Caliking",
+      link: "https://caliking1234.github.io/CALIKING/",
+      thumbnail: "/images/caliking.jpg",
     },
   ];
   const component = useRef(null);
@@ -21,7 +51,7 @@ const MyProjectList = () => {
   const lastMousePos = useRef({ x: 0, y: 0 });
   const [currentItem, setcurrentItem] = useState<null | number>(null);
   const contentImage = (index: number) => {
-    return projectList[index].Image;
+    return projectList[index].thumbnail;
   };
 
   const onMouseEnter = (index: number) => {
@@ -118,7 +148,7 @@ const MyProjectList = () => {
               className=" w-full py-5 pl-3 flex items-center  text-slate-200 text-3xl"
               href={project.link}
             >
-              {project.name}
+              {project.title}
             </Link>
           </li>
         ))}

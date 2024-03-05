@@ -46,7 +46,7 @@ const PerspectiveView = () => {
   return (
     <div
       ref={container}
-      className=" w-full h-[100vh] relative bg-slate-900 overflow-hidden"
+      className=" w-full h-[100vh] relative bg-slate-900 overflow-hidden hidden md:block"
     >
       <div className=" w-full h-full absolute top-0 left-0 cover-text flex items-center justify-center bg-slate-900 z-10">
         <h1 className=" text-5xl font-bold">you imagine,</h1>

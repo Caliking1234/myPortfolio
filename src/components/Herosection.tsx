@@ -160,7 +160,7 @@ const Herosection = () => {
           // duration: 3,
           // ease: "back.out(2)",
         },
-        0.25
+        0.15
       );
     }, container);
 
@@ -177,8 +177,8 @@ const Herosection = () => {
           >
             <Image
               style={{ mixBlendMode: "darken" }}
-              width={400}
-              height={400}
+              width={200}
+              height={200}
               className=" object-fit w-[100%] h-[100%]"
               alt="zxc"
               src={"/images/cpp-removebg-preview.png"}
@@ -190,8 +190,8 @@ const Herosection = () => {
           >
             <Image
               style={{ mixBlendMode: "darken" }}
-              width={400}
-              height={400}
+              width={200}
+              height={200}
               className=" object-fit w-[100%] h-[100%]"
               alt="zxc"
               src={"/images/expressjs-removebg-preview.png"}
@@ -199,8 +199,8 @@ const Herosection = () => {
           </div>
           <div className=" w-[30vw] h-[25vh] flex items-center justify-center absolute opac3">
             <Image
-              width={400}
-              height={400}
+              width={200}
+              height={200}
               className=" object-fit w-[100%] h-[100%]"
               alt="zxc"
               src={"/images/next.png"}
@@ -208,8 +208,8 @@ const Herosection = () => {
           </div>
           <div className=" w-[30vw] h-[25vh] flex items-center justify-center absolute opac4">
             <Image
-              width={400}
-              height={400}
+              width={200}
+              height={200}
               className=" object-fit w-[100%] h-[100%]"
               alt="zxc"
               src={"/images/nodejs-removebg-preview.png"}
@@ -226,8 +226,8 @@ const Herosection = () => {
           </div>
           <div className=" w-[30vw] h-[25vh] flex items-center justify-center absolute opac5">
             <Image
-              width={400}
-              height={400}
+              width={200}
+              height={200}
               className=" object-fit w-[100%] h-[100%]"
               alt="zxc"
               src={"/images/python.png"}
@@ -235,8 +235,8 @@ const Herosection = () => {
           </div>
           <div className=" w-[30vw] h-[25vh] flex items-center justify-center absolute opac6">
             <Image
-              width={400}
-              height={400}
+              width={200}
+              height={200}
               className=" object-fit w-[100%] h-[100%]"
               alt="zxc"
               src={"/images/react-native-removebg-preview.png"}
@@ -244,8 +244,8 @@ const Herosection = () => {
           </div>
           <div className=" w-[30vw] h-[25vh] flex items-center justify-center absolute opac7">
             <Image
-              width={400}
-              height={400}
+              width={200}
+              height={200}
               className=" object-fit w-[100%] h-[100%]"
               alt="zxc"
               src={"/images/react-removebg-preview.png"}
@@ -253,8 +253,8 @@ const Herosection = () => {
           </div>
           <div className=" w-[30vw] h-[25vh] flex items-center justify-center absolute opac8">
             <Image
-              width={400}
-              height={400}
+              width={200}
+              height={200}
               className=" object-fit w-[100%] h-[100%]"
               alt="zxc"
               src={"/images/posgre-removebg-preview.png"}

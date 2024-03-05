@@ -12,19 +12,16 @@ const About = () => {
             About Me
           </h1>
           <div className=" prose prose-xl prose-slate prose-invert col-start-1">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
-            velit aut est commodi aperiam recusandae aspernatur? Animi dolores
-            magnam suscipit! Nobis esse facilis labore iure ab voluptatibus cum
-            totam reprehenderit. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Reiciendis fugit doloribus, eum, voluptas, et
-            voluptatibus porro quisquam nostrum dicta voluptatem incidunt
-            aperiam recusandae nobis harum blanditiis provident quas esse
-            delectus.
-            <br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos facere
-            cum temporibus? Iusto dolore possimus nisi dolor consequatur eius
-            saepe at laudantium dicta deserunt, beatae fugiat optio porro
-            voluptate eos?
+            Piyush Sharma, a dedicated B.Tech student from NSUT graduating in
+            2024, is driven by a fervent passion for animating and enhancing web
+            designs. With a keen eye for detail and a commitment to excellence,
+            I specializes in crafting captivating products using
+            state-of-the-art technologies and frameworks. As a dynamic
+            freelancer, I thrive on pushing boundaries, consistently delivering
+            exceptional solutions that exceed client expectations. With a blend
+            of creativity and technical expertise, he continuously strives to
+            elevate my craft, ensuring each project is executed with precision
+            and finesse, leaving a lasting impression on every endeavor.
           </div>
           <Avtar />
         </div>
