@@ -4,6 +4,7 @@ import Bounded from "@/components/Bounded";
 import Herosection from "@/components/Herosection";
 // import MyProjectList from "@/components/MyProjectList";
 import MyProjects from "@/components/MyProjects";
+import NewComp from "@/components/NewComp";
 import { HeroParallax } from "@/components/Newherosection";
 import Resume from "@/components/Resume";
 // import PerspectiveView from "@/components/PerspectiveView";
@@ -143,6 +144,7 @@ export default function Home() {
         </div>
       </Bounded> */}
       <HeroParallax products={products} />
+      <NewComp />
       <About />
       <Herosection />
       <MyProjects />
