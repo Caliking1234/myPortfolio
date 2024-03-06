@@ -22,6 +22,7 @@ const NewComp = () => {
         },
       });
 
+      // tl.fromTo(".space", { scale: 0.5 }, { scale: 2 }, 0);
       tl.to(".text1", {
         scale: 0,
         opacity: 0,
@@ -37,9 +38,9 @@ const NewComp = () => {
   return (
     <div
       ref={component}
-      className=" h-[200vh] w-full relative flex flex-row justify-center"
+      className=" h-[150vh] md:h-[200vh] w-full relative flex flex-row justify-center"
     >
-      <div className=" w-1/2 h-[50vh] sticky top-[50%] translate-y-[-50%]">
+      <div className=" w-1/2 h-[50vh] z-10 sticky top-[50%] translate-y-[-50%]">
         <div className=" w-full h-full text1 absolute top-0 left-0 flex items-center justify-center ">
           <h1 className=" text-5xl font-bold">you imagine,</h1>
         </div>
@@ -47,9 +48,15 @@ const NewComp = () => {
           <h1 className=" text-5xl font-bold">i code</h1>
         </div>
       </div>
-      <div className=" h-[50vh] w-1/2 flex items-center justify-center sticky top-[50%] translate-y-[-50%] ">
+      <div className=" h-[50vh] w-1/2 flex z-10 items-center justify-center sticky top-[50%] translate-y-[-50%] ">
         <Shapes />
       </div>
+      {/* <Image
+        src={"/images/universe.jpg"}
+        alt=" abc"
+        fill
+        className=" absolute top-0 space z-10"
+      /> */}
     </div>
   );
 };

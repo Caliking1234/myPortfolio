@@ -59,7 +59,7 @@ const Resume = () => {
       ref={component}
       className=" h-[200vh] relative flex flex-col items-center py-10"
     >
-      <div className=" resume h-fit sticky top-0">
+      <div className=" resume h-fit sticky top-0 pt-20">
         <div>
           <Image
             src={"/images/resume1.jpg"}
