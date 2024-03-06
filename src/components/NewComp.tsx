@@ -47,7 +47,7 @@ const NewComp = () => {
           <h1 className=" text-5xl font-bold">i code</h1>
         </div>
       </div>
-      <div className=" h-[50vh] flex items-center justify-center sticky top-0 ">
+      <div className=" h-[50vh] flex items-center justify-center static md:sticky mg:top-0 ">
         <Shapes />
       </div>
     </div>
