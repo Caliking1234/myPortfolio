@@ -12,8 +12,8 @@ const Avtar = () => {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: component.current,
-          start: "-15% top",
-          end: "50% bottom",
+          start: "top bottom",
+          end: "top bottom",
           scrub: 2,
           markers: true,
         },
