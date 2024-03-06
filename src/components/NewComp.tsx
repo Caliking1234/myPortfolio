@@ -16,8 +16,8 @@ const NewComp = () => {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: component.current,
-          start: "50% top",
-          end: "bottom bottom",
+          start: "25% top",
+          end: "75% 50%",
           scrub: 2,
         },
       });
@@ -37,7 +37,7 @@ const NewComp = () => {
   return (
     <div
       ref={component}
-      className=" h-[150vh] w-full relative flex-col-reverse flex md:flex-row items-center justify-center"
+      className=" h-[200vh] w-full relative flex-col-reverse flex md:flex-row justify-center"
     >
       <div className=" w-1/2 h-[50vh] sticky top-0">
         <div className=" w-full h-full text1 absolute top-0 left-0 flex items-center justify-center ">
@@ -47,7 +47,7 @@ const NewComp = () => {
           <h1 className=" text-5xl font-bold">i code</h1>
         </div>
       </div>
-      <div className=" h-[50vh] flex items-center justify-center static md:sticky mg:top-0 ">
+      <div className=" h-[50vh] flex items-center justify-center static md:sticky md:top-0 ">
         <Shapes />
       </div>
     </div>
