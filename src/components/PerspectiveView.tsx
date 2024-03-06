@@ -46,18 +46,19 @@ const PerspectiveView = () => {
   return (
     <div
       ref={container}
-      className=" w-full h-[100vh] relative bg-slate-900 overflow-hidden hidden md:block"
+      className=" w-full max-h-screen relative bg-slate-900 overflow-hidden"
     >
       <div className=" w-full h-full absolute top-0 left-0 cover-text flex items-center justify-center bg-slate-900 z-10">
         <h1 className=" text-5xl font-bold">you imagine,</h1>
       </div>
       <div
-        style={{ perspective: 800 }}
-        className=" w-full sticky top-0 h-[100vh] overflow-hidden flex items-center justify-center flex-col  animate-div"
+        style={{ perspective: 500 }}
+        className=" w-full sticky top-0 h-[100vh] overflow-hidden grid grid-cols-3  animate-div"
       >
+        <div className=" w-full h-1/3"></div>
         <div
           style={{ transform: "rotateX(-60deg)" }}
-          className=" w-full h-[30vh] flex items-center justify-center"
+          className=" w-full h-1/3 flex items-center justify-center"
         >
           <Image
             src={"/images/coding1.jpeg"}
@@ -66,48 +67,41 @@ const PerspectiveView = () => {
             alt="xbc"
           />
         </div>
+        <div className=" w-full h-1/3"></div>
         <div
-          style={{ perspective: 800 }}
-          className=" w-full flex flex-row items-center justify-center"
-        >
-          <div
-            style={{ transform: "rotateY(70deg)" }}
-            className=" w-full h-[30vh] flex items-center justify-center"
-          >
-            <Image
-              src={"/images/coding2.jpg"}
-              height={400}
-              width={400}
-              alt="xbc"
-            />
-          </div>
-          <div className="inner-div z-10 flex items-center justify-center text-xs">
-            <h1>I create</h1>
-          </div>
-          <div
-            style={{ transform: "rotateY(-70deg)" }}
-            className=" w-full h-[30vh] flex items-center justify-center"
-          >
-            <Image
-              src={"/images/coding3.jpg"}
-              height={400}
-              width={400}
-              alt="xbc"
-            />
-          </div>
-        </div>
-        <div
-          style={{ transform: "rotateX(30deg)" }}
-          className=" w-full h-[30vh] flex items-center justify-center"
+          style={{ transform: "rotateY(70deg)" }}
+          className=" w-full h-1/3 flex items-center justify-center"
         >
           <Image
-            src={"/images/coding4.jpg"}
+            src={"/images/coding2.jpg"}
+            height={400}
+            width={400}
+            alt="xbc"
+          />
+        </div>
+        <div className="inner-div z-10 flex items-center justify-center text-xs">
+          <h1>I create</h1>
+        </div>
+        <div
+          style={{ transform: "rotateY(-70deg)" }}
+          className=" w-full h-1/3 flex items-center justify-center"
+        >
+          <Image
+            src={"/images/coding3.jpg"}
             height={400}
             width={400}
             alt="xbc"
           />
         </div>
       </div>
+      <div className=" w-full h-1/3"></div>
+      <div
+        style={{ transform: "rotateX(30deg)" }}
+        className=" w-full h-1/3 flex items-center justify-center"
+      >
+        <Image src={"/images/coding4.jpg"} height={400} width={400} alt="xbc" />
+      </div>
+      <div className=" w-full h-1/3"></div>
     </div>
   );
 };

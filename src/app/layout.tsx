@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { Urbanist } from "next/font/google";
+import { Urbanist, Bebas_Neue } from "next/font/google";
 import "./globals.css";
 const inter = Urbanist({ subsets: ["latin"] });
+const bebas = Bebas_Neue({ subsets: ["latin"], weight: ["400"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className=" bg-slate-700 text-slate-100">
-      <body className={inter.className}>{children}</body>
+      <body className={bebas.className}>{children}</body>
     </html>
   );
 }

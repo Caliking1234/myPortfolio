@@ -31,8 +31,6 @@ const Herosection = () => {
           top: -1000,
           left: -1000,
           scale: 5,
-          // duration: 2,
-          // ease: "back.out(2)",
         },
         0
       );
@@ -47,8 +45,6 @@ const Herosection = () => {
           top: -1000,
           left: "30vw",
           scale: 5,
-          // duration: 2,
-          // ease: "back.out(2)",
         },
         0
       );
@@ -63,8 +59,6 @@ const Herosection = () => {
           top: -1000,
           right: -1000,
           scale: 5,
-          // duration: 2,
-          // ease: "back.out(2)",
         },
         0
       );
@@ -79,8 +73,6 @@ const Herosection = () => {
           top: "40vh",
           left: -1000,
           scale: 5,
-          // duration: 2,
-          // ease: "back.out(2)",
         },
         0
       );
@@ -95,8 +87,6 @@ const Herosection = () => {
           top: "40vh",
           right: -1000,
           scale: 5,
-          // duration: 2,
-          // ease: "back.out(2)",
         },
         0
       );
@@ -111,8 +101,6 @@ const Herosection = () => {
           bottom: -1000,
           left: -1000,
           scale: 5,
-          // duration: 2,
-          // ease: "back.out(2)",
         },
         0
       );
@@ -127,8 +115,6 @@ const Herosection = () => {
           bottom: -1000,
           left: "30vw",
           scale: 5,
-          // duration: 2,
-          // ease: "back.out(2)",
         },
         0
       );
@@ -143,8 +129,6 @@ const Herosection = () => {
           bottom: -1000,
           right: -1000,
           scale: 5,
-          // duration: 2,
-          // ease: "back.out(2)",
         },
         0
       );
@@ -157,10 +141,8 @@ const Herosection = () => {
         {
           width: "100%",
           height: "100%",
-          // duration: 3,
-          // ease: "back.out(2)",
         },
-        0.15
+        0
       );
     }, container);
 
@@ -168,12 +150,12 @@ const Herosection = () => {
   }, []);
 
   return (
-    <div ref={container} className=" w-full h-[150vh] relative bg-[#1E1842]">
+    <div ref={container} className=" w-full h-[150vh] relative bg-slate-900">
       <div className=" w-full sticky top-0 h-[100vh] overflow-hidden">
         <div className="flex items-center justify-center w-full h-[100vh] top-0 absolute">
           <div
             style={{ mixBlendMode: "darken" }}
-            className=" w-[30vw] h-[25vh] flex items-center justify-center absolute opac1"
+            className=" w-[20vw] h-[20vh] flex items-center justify-center absolute opac1"
           >
             <Image
               style={{ mixBlendMode: "darken" }}
@@ -186,7 +168,7 @@ const Herosection = () => {
           </div>
           <div
             style={{ mixBlendMode: "darken" }}
-            className=" w-[30vw] h-[25vh] flex items-center justify-center absolute opac2"
+            className=" w-[20vw] h-[20vh] flex items-center justify-center absolute opac2"
           >
             <Image
               style={{ mixBlendMode: "darken" }}
@@ -197,7 +179,7 @@ const Herosection = () => {
               src={"/images/expressjs-removebg-preview.png"}
             />
           </div>
-          <div className=" w-[30vw] h-[25vh] flex items-center justify-center absolute opac3">
+          <div className=" w-[20vw] h-[20vh] flex items-center justify-center absolute opac3">
             <Image
               width={200}
               height={200}
@@ -206,7 +188,7 @@ const Herosection = () => {
               src={"/images/next.png"}
             />
           </div>
-          <div className=" w-[30vw] h-[25vh] flex items-center justify-center absolute opac4">
+          <div className=" w-[20vw] h-[20vh] flex items-center justify-center absolute opac4">
             <Image
               width={200}
               height={200}
@@ -215,16 +197,16 @@ const Herosection = () => {
               src={"/images/nodejs-removebg-preview.png"}
             />
           </div>
-          <div className=" w-[30vw] h-[25vh] z-10 hero-img ">
+          <div className=" w-[30vw] h-[25vh] z-10 hero-img bg-slate-900 my-auto ">
             <Image
-              height={400}
-              width={400}
-              className=" object-fit w-[100%] h-[100%]"
+              height={800}
+              width={800}
+              className=" object-fit h-[100%] w-full"
               alt="zxc"
-              src={"/images/dev.gif"}
+              src={"/images/dev-unscreen.gif"}
             />
           </div>
-          <div className=" w-[30vw] h-[25vh] flex items-center justify-center absolute opac5">
+          <div className=" w-[20vw] h-[20vh] flex items-center justify-center absolute opac5">
             <Image
               width={200}
               height={200}
@@ -233,7 +215,7 @@ const Herosection = () => {
               src={"/images/python.png"}
             />
           </div>
-          <div className=" w-[30vw] h-[25vh] flex items-center justify-center absolute opac6">
+          <div className=" w-[20vw] h-[20vh] flex items-center justify-center absolute opac6">
             <Image
               width={200}
               height={200}
@@ -242,7 +224,7 @@ const Herosection = () => {
               src={"/images/react-native-removebg-preview.png"}
             />
           </div>
-          <div className=" w-[30vw] h-[25vh] flex items-center justify-center absolute opac7">
+          <div className=" w-[20vw] h-[20vh] flex items-center justify-center absolute opac7">
             <Image
               width={200}
               height={200}
@@ -251,7 +233,7 @@ const Herosection = () => {
               src={"/images/react-removebg-preview.png"}
             />
           </div>
-          <div className=" w-[30vw] h-[25vh] flex items-center justify-center absolute opac8">
+          <div className=" w-[20vw] h-[20vh] flex items-center justify-center absolute opac8">
             <Image
               width={200}
               height={200}

@@ -3,8 +3,6 @@ import React, { useEffect, useRef } from "react";
 import Bounded from "./Bounded";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Lenis from "@studio-freight/lenis";
-
 gsap.registerPlugin(ScrollTrigger);
 
 const TexhStcak = () => {
@@ -56,7 +54,7 @@ const TexhStcak = () => {
       className="flex min-h-screen flex-col bg-slate-900 w-full overflow-hidden"
     >
       <Bounded>
-        <h2 className="mb-8 text-[clamp(1.5rem,15vmin,15rem)] font-extrabold leading-none tracking-tighter">
+        <h2 className="mb-8 text-[clamp(1.5rem,15vmin,15rem)] font-extrabold leading-none tracking-wider">
           What I Use
         </h2>
       </Bounded>

@@ -1,11 +1,12 @@
 "use client";
 import About from "@/components/About";
-// import Bounded from "@/components/Bounded";
+import Bounded from "@/components/Bounded";
 import Herosection from "@/components/Herosection";
 // import MyProjectList from "@/components/MyProjectList";
 import MyProjects from "@/components/MyProjects";
 import { HeroParallax } from "@/components/Newherosection";
-import PerspectiveView from "@/components/PerspectiveView";
+import Resume from "@/components/Resume";
+// import PerspectiveView from "@/components/PerspectiveView";
 // import Shapes from "@/components/Shapes";
 import { gsap } from "gsap";
 import { useEffect, useRef } from "react";
@@ -117,7 +118,7 @@ export default function Home() {
   };
 
   return (
-    <div className=" bg-slate-900">
+    <div className=" bg-slate-900 relative">
       {/* <Bounded
         ref={componenet}
         className="flex min-h-screen flex-col bg-slate-900 w-full"
@@ -142,10 +143,17 @@ export default function Home() {
         </div>
       </Bounded> */}
       <HeroParallax products={products} />
-      <PerspectiveView />
       <About />
       <Herosection />
       <MyProjects />
+      <div>
+        <Bounded>
+          <h2 className="mb-8 text-[clamp(1.5rem,15vmin,15rem)] font-extrabold leading-none tracking-wider">
+            My Resume
+          </h2>
+        </Bounded>
+        <Resume />
+      </div>
     </div>
   );
 }
