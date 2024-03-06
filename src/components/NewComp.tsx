@@ -48,9 +48,9 @@ const NewComp = () => {
           <h1 className=" text-5xl font-bold">i code</h1>
         </div>
       </div>
-      <div className=" h-[50vh] w-1/2 flex z-10 items-center justify-center sticky top-[50%] translate-y-[-50%] ">
+      <Bounded className=" overflow-hidden h-[50vh] w-1/2 flex z-10 items-center justify-center sticky top-[50%] translate-y-[-50%] ">
         <Shapes />
-      </div>
+      </Bounded>
       {/* <Image
         src={"/images/universe.jpg"}
         alt=" abc"
