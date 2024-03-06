@@ -17,7 +17,7 @@ const NewComp = () => {
         scrollTrigger: {
           trigger: component.current,
           start: "25% top",
-          end: "75% 50%",
+          end: "50% 50%",
           scrub: 2,
         },
       });
@@ -39,7 +39,7 @@ const NewComp = () => {
       ref={component}
       className=" h-[200vh] w-full relative flex flex-row justify-center"
     >
-      <div className=" w-1/2 h-[50vh] pt-40 sticky top-0">
+      <div className=" w-1/2 h-[50vh] sticky top-[50%] translate-y-[-50%]">
         <div className=" w-full h-full text1 absolute top-0 left-0 flex items-center justify-center ">
           <h1 className=" text-5xl font-bold">you imagine,</h1>
         </div>
@@ -47,7 +47,7 @@ const NewComp = () => {
           <h1 className=" text-5xl font-bold">i code</h1>
         </div>
       </div>
-      <div className=" h-[50vh] w-1/2 pt-40 flex items-center justify-center sticky top-0 ">
+      <div className=" h-[50vh] w-1/2 flex items-center justify-center sticky top-[50%] translate-y-[-50%] ">
         <Shapes />
       </div>
     </div>
