@@ -15,7 +15,7 @@ const Avtar = () => {
           start: "top bottom",
           end: "top bottom",
           scrub: 2,
-          markers: true,
+          // markers: true,
         },
       });
       tl.fromTo(
