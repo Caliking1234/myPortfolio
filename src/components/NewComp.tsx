@@ -37,7 +37,7 @@ const NewComp = () => {
   return (
     <div
       ref={component}
-      className=" h-[200vh] w-full relative flex flex-row justify-center"
+      className=" h-[200vh] w-full relative flex flex-row justify-center pt-16"
     >
       <div className=" w-1/2 h-[50vh] sticky top-0">
         <div className=" w-full h-full text1 absolute top-0 left-0 flex items-center justify-center ">
