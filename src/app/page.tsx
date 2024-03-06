@@ -60,62 +60,62 @@ export default function Home() {
     },
   ];
 
-  useEffect(() => {
-    let ctx = gsap.context(() => {
-      const t1 = gsap.timeline();
-      t1.fromTo(
-        ".name-animation",
-        {
-          x: -100,
-          opacity: 0,
-          rotate: -10,
-        },
-        {
-          x: 0,
-          opacity: 1,
-          rotate: 0,
-          ease: "elastic.out(1,0.3)",
-          transform: "left top",
-          stagger: {
-            each: 0.1,
-            from: "random",
-          },
-        }
-      );
+  // useEffect(() => {
+  //   let ctx = gsap.context(() => {
+  //     const t1 = gsap.timeline();
+  //     t1.fromTo(
+  //       ".name-animation",
+  //       {
+  //         x: -100,
+  //         opacity: 0,
+  //         rotate: -10,
+  //       },
+  //       {
+  //         x: 0,
+  //         opacity: 1,
+  //         rotate: 0,
+  //         ease: "elastic.out(1,0.3)",
+  //         transform: "left top",
+  //         stagger: {
+  //           each: 0.1,
+  //           from: "random",
+  //         },
+  //       }
+  //     );
 
-      t1.fromTo(
-        ".job-title",
-        {
-          y: 25,
-          opacity: 0,
-          scale: 1.2,
-        },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 1,
-          delay: 0.5,
-          scale: 1,
-          ease: "elastic.out(1,0.1)",
-        }
-      );
-    }, componenet);
+  //     t1.fromTo(
+  //       ".job-title",
+  //       {
+  //         y: 25,
+  //         opacity: 0,
+  //         scale: 1.2,
+  //       },
+  //       {
+  //         y: 0,
+  //         opacity: 1,
+  //         duration: 1,
+  //         delay: 0.5,
+  //         scale: 1,
+  //         ease: "elastic.out(1,0.1)",
+  //       }
+  //     );
+  //   }, componenet);
 
-    return () => ctx.revert();
-  }, []);
+  //   return () => ctx.revert();
+  // }, []);
 
-  const renderLetters = (name: string, key: string) => {
-    if (!name) return;
+  // const renderLetters = (name: string, key: string) => {
+  //   if (!name) return;
 
-    return name.split("").map((letter, index) => (
-      <span
-        key={index}
-        className={`name-animation nameanimation-${key} inline-block opacity-0`}
-      >
-        {letter}
-      </span>
-    ));
-  };
+  //   return name.split("").map((letter, index) => (
+  //     <span
+  //       key={index}
+  //       className={`name-animation nameanimation-${key} inline-block opacity-0`}
+  //     >
+  //       {letter}
+  //     </span>
+  //   ));
+  // };
 
   return (
     <div className=" bg-slate-900 relative">

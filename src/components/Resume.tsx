@@ -27,9 +27,6 @@ const Resume = () => {
       tl.to(".part2", {
         rotateX: "0deg",
       });
-      tl.to(".part3", {
-        rotateX: "0deg",
-      });
       tl.to(
         ".resume",
         {
@@ -102,22 +99,22 @@ const Resume = () => {
           />
         </div>
       </div>
-      <div className=" resumeText z-50 opacity-0 fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-center">
+      <div className=" resumeText z-20 opacity-0 fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-center">
         <h1 className="mb-8 text-[clamp(1.5rem,15vmin,15rem)] font-extrabold leading-none tracking-wider">
           Download
         </h1>
         <button className=" py-3 px-2 bg-slate-900 rounded-lg cursor-pointer">
-          <a
+          <Link
             href={"/resources/resume-2023.pdf"}
             download={"Piyush Sharma.pdf"}
             target="_blank"
             rel="noopener noreferrer"
           >
             Click me
-          </a>
+          </Link>
         </button>
       </div>
-      <div className=" overlay w-full h-full bg-black/50 fixed top-0 left-0 z-40 opacity-0"></div>
+      <div className=" overlay w-full h-full bg-black/50 absolute top-0 left-0 z-10 opacity-0"></div>
     </div>
   );
 };
